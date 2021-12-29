@@ -6,7 +6,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // ? to ask if user wants to create a readme
 const createReadme = {
     type: "list",
-    name: "start",
+    name: "startGenerating",
     message: "Would you like to create a Readme for this project?",
     choices: [
         new inquirer.Separator(" = Select Y or N: = "),
@@ -17,7 +17,7 @@ const createReadme = {
             name: "N",
         },
     ]
-};
+}
 
 // Create an array of questions for user input
 
@@ -26,7 +26,6 @@ const questions = [
         type: "input",
         name: "userName",
         message: "Who created this software?",
-
     },
     {   
         type: "input",
@@ -99,24 +98,24 @@ const questions = [
 
 //function that initializes app
 function init() {
-    inquirer.prompt(questions).then((userAnswers) => {
+    inquirer.prompt(questions).then((userInput) => {
         const fileName = `README.md`;
-        console.log(userAnswers.start);
+        console.log(userInput.startGenerating);
 
 //function that writes README file
 
-    fs.writetoFile(fileName, generateMarkdown(userAnswers), (err) =>
+    fs.writeFile(fileName, generateMarkdown(userInput), (err) =>
         err ? console.error(err) : console.log("Successfully generated")
     );
   });
-};
+}
 
 //Ask if user wants to make a readme
 
 function create() {
-    inquirer.prompt(createReadme).then((userAnswers) => {
-        console.log(userAnswers.start);
-        if (userAnswers.start === "N") {
+    inquirer.prompt(createReadme).then((userInput) => {
+        console.log(userInput.startGenerating);
+        if (userInput.start === "N") {
             process.exit();
         }
         init();
@@ -128,5 +127,4 @@ create();
 
 
 
-// Function that calls to initialize app
-init();
+

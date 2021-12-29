@@ -1,7 +1,7 @@
 // This is a function that returns a license badge based on which license is passed in
 // If there is no license, returns an empty string
 function renderLicenseBadge(choices) {
-  const { licenseList, userName, yearCompleted } = choices;
+  const { licenseList } = choices;
   if (licenseList === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yelloe.svg)](https://opensource.org/licenses/MIT)`;
   } else if (licenseList === "Apache") {
@@ -27,27 +27,84 @@ function renderLicenseLink(choices) {
 
 //This is a function that returns the license section of README
 // If there is no license, it will return an empty string
-function renderLicenseSection(license) {
+// function renderLicenseSection(license) {
 
-}
+// }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(choices) {
-  console.log(choices);
+// This function will generate markdown for README
+function generateMarkdown(userInput) {
+  console.log(userInput);
 
   const {
     yearCompleted,
+    userName,
     projectTitle,
     projectDescription,
     installation,
     userInteraction,
-    licenseList,
     contribute,
     testing,
     additionalQuestions,
     githubUN,
     emailaddress,
-  }
-} = choices;
+  } = userInput
+
+  return `# ${projectTitle}
+
+    ##Created by:
+
+  ${userName}
+  
+    ## Description
+  
+  ${projectDescription}
+  
+    ## Table of Contents
+  
+    -[Installation](#installation)
+    -[Usage](#userInteraction)
+    -[License](#license)
+    -[Contributing](#contribute)
+    -[Tests](#testing)
+    -[Questions](#additionalQuestions)
+    
+    ## Installation
+
+  ${installation}
+
+    ## Usage
+  
+  ${userInteraction}
+
+    ## License
+
+  ${renderLicenseLink(userInput)} License
+  ${renderLicenseBadge(userInput)} Badge
+
+    ## Contributions
+  
+  ${contribute}
+
+    ## Tests
+
+  ${testing}
+
+    ## Questions
+
+  ${additionalQuestions}
+
+    ### Github
+  
+  https://github.com/${githubUN}
+
+    ### Email
+
+  ${emailaddress}
+   
+
+  ${yearCompleted}
+    `;
+  
+}
 
 module.exports = generateMarkdown;
