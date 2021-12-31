@@ -6,7 +6,7 @@ Charlie Stedman
   
   ## Description
   
-This is a read me generator
+readme generator program
   
   ## Table of Contents
   
@@ -23,7 +23,7 @@ node index.js
 
   ## Usage
   
-node.js
+terminal
 
   ## License
 
@@ -32,15 +32,15 @@ node.js
 
   ## Contributions
   
-ask me please
+ask me directly
 
   ## Tests
 
-tests can be performed by running the program
+in terminal
 
   ## Questions
 
-undefined
+aske me directly 
 
   ### Github
   
@@ -48,7 +48,7 @@ undefined
 
   ### Email
 
-undefined
+charliestedman@yahoo.com
    
 
 2021
