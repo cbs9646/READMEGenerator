@@ -46,64 +46,64 @@ function generateMarkdown(userInput) {
     testing,
     additionalQuestions,
     githubUN,
-    emailaddress,
+    emailAddress,
   } = userInput
 
   return `# ${projectTitle}
 
-    ##Created by:
+  ## Created by:
 
-  ${userName}
+${userName}
   
-    ## Description
+  ## Description
   
-  ${projectDescription}
+${projectDescription}
   
-    ## Table of Contents
+  ## Table of Contents
   
-    -[Installation](#installation)
-    -[Usage](#userInteraction)
-    -[License](#license)
-    -[Contributing](#contribute)
-    -[Tests](#testing)
-    -[Questions](#additionalQuestions)
-    
-    ## Installation
+  -[Installation](#installation)
+  -[Usage](#userInteraction)
+  -[License](#license)
+  -[Contributing](#contribute)
+  -[Tests](#testing)
+  -[Questions](#additionalQuestions)
+ 
+  ## Installation
 
-  ${installation}
+${installation}
 
-    ## Usage
+  ## Usage
   
-  ${userInteraction}
+${userInteraction}
 
-    ## License
+  ## License
 
-  ${renderLicenseLink(userInput)} License
-  ${renderLicenseBadge(userInput)} Badge
+${renderLicenseLink(userInput)} License
+${renderLicenseBadge(userInput)} Badge
 
-    ## Contributions
+  ## Contributions
   
-  ${contribute}
+${contribute}
 
-    ## Tests
+  ## Tests
 
-  ${testing}
+${testing}
 
-    ## Questions
+  ## Questions
 
-  ${additionalQuestions}
+${additionalQuestions}
 
-    ### Github
+  ### Github
   
   https://github.com/${githubUN}
 
-    ### Email
+  ### Email
 
-  ${emailaddress}
+${emailAddress}
    
 
-  ${yearCompleted}
-    `;
+${yearCompleted}
+`;
   
 }
 

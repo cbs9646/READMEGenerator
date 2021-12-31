@@ -1,55 +1,54 @@
-# b
+# Readme generator
 
-    ##Created by:
+  ## Created by:
 
-  me
+Charlie Stedman
   
-    ## Description
+  ## Description
   
-  c
+This is a read me generator
   
-    ## Table of Contents
+  ## Table of Contents
   
-    -[Installation](#installation)
-    -[Usage](#userInteraction)
-    -[License](#license)
-    -[Contributing](#contribute)
-    -[Tests](#testing)
-    -[Questions](#additionalQuestions)
-    
-    ## Installation
+  -[Installation](#installation)
+  -[Usage](#userInteraction)
+  -[License](#license)
+  -[Contributing](#contribute)
+  -[Tests](#testing)
+  -[Questions](#additionalQuestions)
+ 
+  ## Installation
 
-  d
+node index.js
 
-    ## Usage
+  ## Usage
   
-  e
+node.js
 
-    ## License
+  ## License
 
-  [MIT](https://opensource.org/licenses/MIT) License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yelloe.svg)](https://opensource.org/licenses/MIT) Badge
+[MIT](https://opensource.org/licenses/MIT) License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yelloe.svg)](https://opensource.org/licenses/MIT) Badge
 
-    ## Contributions
+  ## Contributions
   
-  f
+ask me please
 
-    ## Tests
+  ## Tests
 
-  g
+tests can be performed by running the program
 
-    ## Questions
+  ## Questions
 
-  undefined
+undefined
 
-    ### Github
+  ### Github
   
-  https://github.com/i
+  https://github.com/cbs9646
 
-    ### Email
+  ### Email
 
-  undefined
+undefined
    
 
-  a
-    
+2021

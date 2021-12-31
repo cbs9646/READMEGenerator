@@ -81,7 +81,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "addtionalQuestions",
+        name: "additionalQuestions",
         message: "How can additional questions be added?",
     },
     {
